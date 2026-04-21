@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="BzsCzatxRQ53i3tGNAGz">
-    <mxGraphModel dx="965" dy="514" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="735" dy="391" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -21,6 +21,19 @@
         </mxCell>
         <mxCell id="Qe5wkfP_2V4QmMIwipwt-9" parent="Qe5wkfP_2V4QmMIwipwt-2" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
           <mxGeometry height="150" width="10" x="45" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lRRQMc2StmDhirKio3EF-1" edge="1" parent="Qe5wkfP_2V4QmMIwipwt-2" source="Qe5wkfP_2V4QmMIwipwt-9" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" target="Qe5wkfP_2V4QmMIwipwt-9" value="">
+          <mxGeometry relative="1" width="80" x="1" y="20" as="geometry">
+            <mxPoint x="-20" y="-20" as="offset" />
+            <Array as="points">
+              <mxPoint x="30" y="140" />
+              <mxPoint x="30" y="150" />
+              <mxPoint x="30" y="160" />
+              <mxPoint x="30" y="170" />
+            </Array>
+            <mxPoint x="40" y="150" as="sourcePoint" />
+            <mxPoint x="40" y="170" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="Qe5wkfP_2V4QmMIwipwt-7" edge="1" parent="1" source="Qe5wkfP_2V4QmMIwipwt-9" style="verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;align=center;fontSize=9;" target="Qe5wkfP_2V4QmMIwipwt-6" value="POST /lego-factory/auth">
           <mxGeometry relative="1" as="geometry">
@@ -87,8 +100,23 @@
             <mxPoint x="-4" y="9" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Qe5wkfP_2V4QmMIwipwt-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=9;" value="Pasado el tiempo la API pone el pedido en checkin" vertex="1">
+        <mxCell id="Qe5wkfP_2V4QmMIwipwt-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=7;" value="Pasado el tiempo la API pone el pedido en checkin, si no hay espacio lo pone en el buffer" vertex="1">
           <mxGeometry height="30" width="110" x="490" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="lRRQMc2StmDhirKio3EF-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=7;" value="Descontamos el espacio y hacemos correr el tiempo" vertex="1">
+          <mxGeometry height="30" width="80" x="120" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="lRRQMc2StmDhirKio3EF-3" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" target="Qe5wkfP_2V4QmMIwipwt-9" value="">
+          <mxGeometry relative="1" width="80" x="1" y="20" as="geometry">
+            <mxPoint x="-20" y="-20" as="offset" />
+            <Array as="points">
+              <mxPoint x="200" y="250" />
+              <mxPoint x="200" y="260" />
+              <mxPoint x="210" y="260" />
+            </Array>
+            <mxPoint x="215" y="250" as="sourcePoint" />
+            <mxPoint x="215" y="280" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
